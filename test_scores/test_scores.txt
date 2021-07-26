@@ -1,0 +1,39 @@
+Tahmin Edilen Değer:79
+
+Linear Regresyon
+R2 Değeri:0.9477832064692487
+Tahmin Sonucu:[[75.63476411]]
+Absolute Error:2.5615095369968284
+
+Polinomik Regresyon
+R2 Değeri:0.9294672837180512
+Tahmin Sonucu:[[75.10614697]]
+Absolute Error:2.8631399040406738
+
+SVR
+R2 Değeri:0.9479757029962437
+Tahmin Sonucu:[-0.04114611]
+Absolute Error:0.17832337395455464
+
+Random Forest
+R2 Değeri:0.9441348161101136
+Tahmin Sonucu:[76.34166667]
+Absolute Error:2.6005045867563625
+
+Tensorflow
+R2 Degeri:0.9248472472857663
+Absolute Error:3.1215221177447927 
+Tahmin Sonucu:[[74.82596]]
+
+İzlenecek Yol:
+Sonuçlar incelendiğinde SVR için Absolute Error değerinin en az olduğu görülür fakat bunun sebebi SVR için StandartScaler kullanılmış olmasıdır,çünkü StandartScaler ile
+R2 socre değerinin arttığı gözlemlenmiştir. Bu yüzden öncelikle diğer modeller arasında Absolute Error değeri  incelenip sonrasında R2 Score  değerine göre yorum yapılabilir ve 
+bir model seçilir. Seçilen model ile SVR kıyaslanıp tekrar seçim yapılır.
+
+Aşamalar:
+-R2 ve Absolute Error değerlerine göre Tensorflow diğer modellerin gerisinde kalmış oluyor fakat Tensorflow içerisinde katmanlar ile veya kulanılan kolonlar ile değişimler
+yapılarak model iyileştirilmesi yapılabilir. 
+-R2 ve Absolute Error değerlerine göre Linear Regresyon diğer modeller arasında öne çıkıyor.
+-Linear Regresyon ile SVR modelinin karşılaştırılmasında R2 Score değerine bakabiliriz. İki değer arasında 0.000192496527 gibi çok az bir fark var. İki model arasındaki seçimde
+önemli olan modellemenin ne amaçla kullanılacağıdır.
+
